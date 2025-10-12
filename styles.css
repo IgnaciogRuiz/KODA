@@ -1,0 +1,175 @@
+/* ======= Reset básico ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #131618;
+}
+
+/* ======= Header ======= */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent; /* deja ver la imagen de fondo */
+  padding: 20px 0;
+}
+
+/* ======= Contenedor del header ======= */
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container  a {
+  text-decoration: none;
+}
+
+/* ======= Logo ======= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+.logo img {
+  width: 75px;
+  height: auto;
+}
+
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c20e04;
+  font-family: 'Audiowide';
+}
+
+/* ======= Navegación ======= */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 4px;
+}
+
+/* ======= Hover y activo ======= */
+.navigation a:hover,
+.navigation a.active {
+  color: #ff1e1e; /* rojo como el del ejemplo */
+  border-bottom: 2px solid #ff1e1e;
+}
+
+/* ======= Responsivo ======= */
+@media (max-width: 768px) {
+  .navigation ul {
+    gap: 20px;
+  }
+}
+
+
+/* ===== HERO SECTION ===== */
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo separado */
+.background-image {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: url('./assets/images/prueba.jpg') center center / cover no-repeat;
+  z-index: 0;
+  will-change: transform;
+  transform: translate3d(0,0,0) scale(1.05);
+  transition: transform 0.25s cubic-bezier(.2,.8,.2,1);
+}
+
+/* overlay sutil para contraste */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* Contenido */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  color: #ddd;
+  margin-bottom: 26px;
+}
+
+.btn-cta {
+  background: #ff1e1e;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-cta:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* header scrolled (ya lo tenías) */
+header {
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease;
+}
+header.scrolled {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 12px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
