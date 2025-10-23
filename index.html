@@ -14,39 +14,447 @@
     <header>
         <div class="header-container">
             <a href="./index.html">
-                <div class="logo">
-                    <img src="./assets/images/Koda Logo - grande.png" alt="KODA Logo">
-                    <h1>KODA</h1>
-                </div>
+            <div class="logo">
+                <img src="./assets/images/Koda Logo - grande.png" alt="KODA Logo">
+                <h1>KODA</h1>
+            </div>
             </a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
 
-        </div>
+            <!-- Botón hamburguesa -->
+            <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <nav class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            </nav>
+    </div>
     </header>
     <main>
-        <main>
+            <svg class="scroll-line" viewBox="0 0 600 2000" preserveAspectRatio="xMidYMin slice">
+            <path id="scrollPath"
+                    d="M100,0 C100,200 50,400 120,600 C200,800 400,1000 300,1300 C200,1600 400,1900 400,2000"
+                    fill="none"
+                    stroke="#ff1e1e"
+                    stroke-width="4"
+                    stroke-linecap="round" />
+            </svg>
+
             <!-- Hero Section -->
             <section id="home" class="hero">
                 <div class="background-image" aria-hidden="true"></div>
 
                 <div class="hero-content">
-                    <h1>Creamos sitios web que impulsan tu marca.</h1>
-                    <p>Desarrollamos soluciones digitales pensadas para hacer crecer tu negocio.</p>
-                    <a href="#projects" class="btn-cta">Ver proyectos</a>
+                    <h1>Tu web profesional, lista para atraer clientes.</h1>
+                    <p>Transformamos tu idea en un sitio web que vende, crece y destaca tu marca. ¡Sin complicaciones, rápido y efectivo!</p>
+                    <a href="https://wa.me/5491123456789?text=Hola!%20Quiero%20crear%20mi%20web" class="btn-cta" target="_blank">
+                        Quiero mi web
+                    </a>
+                    </div>
+
+                    <div class="carousel-wrapper">
+                        <div class="carousel-vertical">
+                            <img src="assets/images/web1.jpg" alt="Proyecto 1">
+                            <img src="assets/images/web2.png" alt="Proyecto 2">
+                            <img src="assets/images/web3.jpg" alt="Proyecto 3">
+                            <img src="assets/images/web4.jpg" alt="Proyecto 4">
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Objetivos Section -->
+            <section class="objetivos">
+                <div class="container">
+                    <div class="section-header">
+                        <h6>Objetivo</h6>
+                        <h2>Hacemos que tu web trabaje por vos</h2>
+                        <p>Combinamos diseño, tecnología y estrategia para construir una web efectiva</p>
+                    </div>
+
+                    <div class="mosaic-staggered">
+                        <div class="mosaic-card"><img src="./assets/images/web1.jpg" alt=""><div class="card-title">Rápidas y optimizadas</div><div class="card-overlay"><p>Cada sitio está diseñado para cargar en segundos y posicionarse en Google.</p></div></div>
+
+                        <div class="mosaic-card"><img src="./assets/images/web1.jpg" alt=""><div class="card-title">Diseño que convierte</div><div class="card-overlay"><p>Creamos experiencias visuales que inspiran confianza y generan clientes.</p></div></div>
+
+                        <div class="mosaic-card"><img src="./assets/images/web4.jpg" alt=""><div class="card-title">100% adaptables</div><div class="card-overlay"><p>Perfectas en móviles, tablets y cualquier pantalla.</p></div></div>
+
+                        <div class="mosaic-card"><img src="./assets/images/web1.jpg" alt=""><div class="card-title">Seguras y actualizadas</div><div class="card-overlay"><p>Implementamos buenas prácticas y mantenimiento constante.</p></div></div>
+                    </div>
                 </div>
             </section>
 
-            <!-- Placeholder para ver el efecto scroll -->
-            <section style="height: 150vh; background: #111;"></section>
-        </main>
+             <!-- Servicios Section -->
+            <section class="services" id="services">
+                <div class="container">
+                    <div class="section-header">
+                        <h6>Servicios</h6>
+                        <h2>Lo que ofrecemos</h2>
+                        <p>Soluciones web a medida para potenciar tu presencia online</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="./assets/images/diseñoweb.png" alt="Icono Diseño Web">
+                            <h3>Diseño Web Personalizado</h3>
+                            <p>Diseños únicos y adaptados a tu marca para destacar en el mercado.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="./assets/images/desarrollo web.png" alt="Icono Desarrollo Web">
+                            <h3>Desarrollo Web Profesional</h3>
+                            <p>Sitios web funcionales, rápidos y optimizados para SEO.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="./assets/images/ecommerce.png" alt="Icono E-commerce">
+                            <h3>Tienda Online</h3>
+                            <p>Plataformas de e-commerce seguras y fáciles de usar para vender más.</p>
+                        </div> 
+                        
+                        <div class="service-card">
+                            <img src="./assets/images/mantenimiento.png" alt="Icono Mantenimiento Web">
+                            <h3>Mantenimiento y Soporte</h3>
+                            <p>Actualizaciones, seguridad y soporte técnico continuo.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="./assets/images/lanfing.png" alt="Icono Mantenimiento Web">
+                            <h3>Landing Pages</h3>
+                            <p>Actualizaciones, seguridad y soporte técnico continuo.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="./assets/images/API.png" alt="Icono Integraciones y APIs">
+                            <h3>Soluciones Tecnológicas</h3>
+                            <p>Integración con APIs y sistemas externos.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="imagencortaseccion">
+                <div class="overlay-texto">
+                    <h2>Diseñamos webs que inspiran confianza y generan resultados.</h2>
+                </div>
+                <img src="./assets/images/banner de fondo.webp" alt="banner foto">
+            </section>
+
+
+            <section class="work-process" id="process">
+                <div class="container">
+                    <div class="section-header">
+                        <h6>Proceso de trabajo</h6>
+                        <h2>Cómo Creamos Tu Sitio Web</h2>
+                        <p>Un proceso claro y eficiente diseñado para garantizar resultados excepcionales en cada proyecto</p>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-progress"></div>
+
+                        <!-- Paso 1 -->
+                        <div class="process-step">
+                            <div class="step-content">
+                                <span class="step-number">PASO 01</span>
+                                <h3 class="step-title">Reunión y Análisis</h3>
+                                <p class="step-description">
+                                    Nos reunimos contigo para entender tu visión, objetivos y necesidades. 
+                                    Analizamos tu marca, tu público objetivo y la competencia para crear 
+                                    una estrategia personalizada.
+                                </p>
+                            </div>
+                            <div class="step-icon-wrapper">
+                                <div class="step-icon">💬</div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="process-step">
+                            <div class="step-content">
+                                <span class="step-number">PASO 02</span>
+                                <h3 class="step-title">Diseño y Desarrollo</h3>
+                                <p class="step-description">
+                                    Creamos prototipos visuales y desarrollamos tu sitio web con las 
+                                    últimas tecnologías. Cada elemento se diseña pensando en la experiencia 
+                                    del usuario y la identidad de tu marca.
+                                </p>
+                            </div>
+                            <div class="step-icon-wrapper">
+                                <div class="step-icon">🎨</div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="process-step">
+                            <div class="step-content">
+                                <span class="step-number">PASO 03</span>
+                                <h3 class="step-title">Revisión y Ajustes</h3>
+                                <p class="step-description">
+                                    Te presentamos el sitio para tu revisión y feedback. Realizamos todos 
+                                    los ajustes necesarios hasta que estés 100% satisfecho con el resultado. 
+                                    Tu opinión es fundamental.
+                                </p>
+                            </div>
+                            <div class="step-icon-wrapper">
+                                <div class="step-icon">🔍</div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="process-step">
+                            <div class="step-content">
+                                <span class="step-number">PASO 04</span>
+                                <h3 class="step-title">Lanzamiento + Soporte</h3>
+                                <p class="step-description">
+                                    Lanzamos tu sitio web al mundo y te brindamos capacitación para que 
+                                    puedas gestionarlo. Además, ofrecemos soporte continuo y mantenimiento 
+                                    para asegurar su óptimo funcionamiento.
+                                </p>
+                            </div>
+                            <div class="step-icon-wrapper">
+                                <div class="step-icon">🚀</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Sección Nosotros -->
+        <section class="about-us" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h6>Nosotros</h6>
+                        <h2>Creamos experiencias digitales con propósito</h2>
+                        <p>Somos un equipo joven y apasionado de desarrollo web, comprometidos con transformar ideas en realidades digitales que generan impacto. En Koda, no solo creamos sitios web: construimos herramientas estratégicas que impulsan el crecimiento de negocios y emprendedores.</p>
+                        <p>Combinamos diseño atractivo, tecnología de vanguardia y estrategia enfocada en resultados. Cada proyecto es una oportunidad para crear algo único, funcional y memorable que conecte tu marca con tu audiencia.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Proyectos Completados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Clientes Satisfechos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Años de Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="./assets/images/web3.jpg" alt="Equipo Koda trabajando">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h6>Portfolio</h6>
+                    <h2>Proyectos destacados</h2>
+                    <p>Algunos trabajos que nos enorgullecen y reflejan nuestro compromiso con la excelencia</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web1.jpg" alt="Proyecto 1">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Estudio Arquitectura Moderna</h3>
+                            <p>Portfolio minimalista para estudio de diseño</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web2.png" alt="Proyecto 2">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Boutique</h3>
+                            <p>Tienda online con pasarela de pago integrada</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web3.jpg" alt="Proyecto 3">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Restaurante Gourmet</h3>
+                            <p>Sitio con reservas online y menú interactivo</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web4.jpg" alt="Proyecto 4">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gimnasio & Wellness</h3>
+                            <p>Landing page con sistema de turnos y planes</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web1.jpg" alt="Proyecto 5">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Consultora Empresarial</h3>
+                            <p>Sitio corporativo con blog y recursos</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/web2.png" alt="Proyecto 6">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="project-link">Ver sitio →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Fotógrafo Profesional</h3>
+                            <p>Portfolio visual con galería interactiva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h6>Contacto</h6>
+                    <h2>Hablemos de tu proyecto</h2>
+                    <p>Contanos tu idea y te ayudamos a hacerla realidad</p>
+                </div>
+
+                <div class="contact-content">
+                    <form class="contact-form" action="mailto:info@koda.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">📧</div>
+                            <h4>Email</h4>
+                            <p>info@koda.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📱</div>
+                            <h4>WhatsApp</h4>
+                            <p>+54 9 11 2345-6789</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h4>Ubicación</h4>
+                            <p>Villa Carlos Paz, Córdoba</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón WhatsApp Flotante -->
+        <a href="https://wa.me/5491123456789?text=Hola!%20Quiero%20hacer%20mi%20web%20con%20Koda" 
+        class="whatsapp-float" 
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+            <svg viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16 0C7.164 0 0 7.163 0 16c0 2.826.736 5.587 2.137 8.023L.149 31.85l8.03-2.028A15.908 15.908 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.074 22.594c-.343.966-2.012 1.773-2.935 1.891-.733.09-1.668.128-2.694-.169a24.557 24.557 0 0 1-2.441-.902c-4.286-1.853-7.081-6.188-7.293-6.47-.213-.281-1.738-2.313-1.738-4.413s1.1-3.13 1.491-3.557c.392-.427.854-.533 1.139-.533.284 0 .569.002.817.015.262.013.614-.099.96.732.356.857 1.212 2.957 1.318 3.172.106.214.177.463.036.745-.142.281-.213.458-.425.705-.213.248-.447.553-.64.742-.213.214-.434.445-.187.873.248.427 1.099 1.813 2.357 2.937 1.619 1.447 2.984 1.896 3.405 2.11.427.213.676.177.925-.107.249-.284 1.065-1.245 1.348-1.672.284-.427.569-.356.96-.213.392.142 2.479 1.17 2.906 1.382.427.213.712.32.818.497.106.177.106 1.013-.237 1.979z"/>
+            </svg>
+        </a>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/images/Koda Logo - grande.png" alt="KODA Logo">
+                        <h3>KODA</h3>
+                    </div>
+                    <p class="footer-tagline">Diseñamos experiencias digitales que impulsan tu marca</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 KODA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="./assets/js/script.js"></script>
 </body>
 
