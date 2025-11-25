@@ -1,0 +1,1 @@
+poner imagenes e info real, cambiar los emojis de los pasos, rediseñar la maner en que se muestran las redes sociales y mejorar el contacto? Hacer que se mande mail con php mailer.  y buscar feedback.
